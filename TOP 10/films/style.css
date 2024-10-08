@@ -131,3 +131,14 @@ footer {
     padding: 10px;
     text-align: center;
 }
+@media (max-width: 768px){
+    .filme {
+        min-width: 85%;
+    }
+    .cabecalho__menu__link {
+        font-size: 20px;
+    }
+    .filmes-detalhes img {
+        width: 376px;
+    }
+}
