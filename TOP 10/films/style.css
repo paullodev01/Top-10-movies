@@ -15,7 +15,7 @@ header {
 
 }
 .buscar {
-    padding: 5px;
+    padding: 10px;
     justify-content: center; /*configurações da barra de busca */
     align-items: center;
     display: flex;
@@ -24,7 +24,8 @@ header {
 }
 #txtBusca {
     font-size: 110%;
-    size: auto;
+    width: 80%; /*aumenta a barrra de busca*/
+    border-radius: 6px; /*deixa ela redonda */
 }
 
 .cabecalho__menu {
@@ -39,6 +40,7 @@ header {
     text-decoration: none; /* tira o sublinhado dos links */
     color: #fff; /* cor da fonte dos links */
     font-weight: bold; /* letra em negrito */
+    font-size: 23px;
     padding: 10px; /* espaço interno */
 }
 
@@ -60,13 +62,13 @@ h2 {
 p{
     text-align: center;
     margin-bottom: 20px;
-    font-size: 21px;
+    font-size: 28px;
 }
 p1{
     text-align: left; /* essse p1 diferente por conta da layout de contato para ficar melhor */
     display: flex;
     flex-direction: column;
-    font-size: 21px;
+    font-size: 28px;
     padding: 6px;
 }
 
@@ -86,7 +88,7 @@ p1{
     text-decoration: none; /* remove o sublinhado do link */
     color: #fff; /* cor da fonte branca */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* sombra para destacar */
-    max-width: 200px;
+    max-width: 372px;
 }
 
 .filme:hover {
@@ -120,12 +122,12 @@ p1{
 
 .filmes-detalhes p {
     margin-bottom: 10px;
-    font-size: 20px; /* aumenta o tamanho da fonte */
+    font-size: 25px; /* aumenta o tamanho da fonte */
 }
 
 /* rodapé */
 footer {
-    margin-top: auto; /* faz o rodapé ocupar o espaço restante */
+    margin-top: auto; /*faz o rodapé ocupar o espaço restante*/
     background-color: #000; /* cor de fundo do rodapé */
     color: #fff; /* cor da fonte branca */
     padding: 10px;
@@ -140,5 +142,8 @@ footer {
     }
     .filmes-detalhes img {
         width: 376px;
+    }
+    .filmes {
+        grid-template-columns: none
     }
 }
